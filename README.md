@@ -18,6 +18,8 @@ similarly server would also send that<br>
 <br>
 <a href="http://www.lassosoft.com/Tutorial-Understanding-Cookies-and-Sessions">
 <br>
+Cookies vs Sessions<br>
+<a href="https://medium.com/@rawat.hemant27/what-is-the-difference-between-cookie-cache-and-session-d6f468a9b4b3"><br>
 
 
 
