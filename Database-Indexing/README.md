@@ -15,10 +15,10 @@ As you can see image below every node left to root(23) is less than 23 and every
 is greater than or equal to 23 and one important thing is all leave nodes are on same level(Balanced Tree)<br>
 which ensures that time taken to access every node is same and every leave node is connected in a doubly linked list form
 <br>
-<img src="../Src/Btree.jpg"></img><br>
+<img src="../Src/Btree.JPG"></img><br>
 Doubly linked list ensures that during scanning we don't have to go up the tree<br>
 Actually how it is store is shown below <br>
-<img src="../Src/Btree2.jpg"></img><br>
+<img src="../Src/Btree2.JPG"></img><br>
 It stores value + Rowid which is location of or Address of row inside the memory <br>
 Pros for storing like this<br>
 1. Searching is very fast (logarithmic)<br>
@@ -50,20 +50,20 @@ loads every column of every row from the table<br>
 Scan through all of them and emits or discard accordingly<br>
 <h4>Some of serious cons of indexing</h4>
 
-1. Index can't be used on functions like
-in my SQL Query 
-where Func() .. some function call = equals something then 
-here index will not work
-solution to this is we can use Between if we can so we can make it a Range Scan
-2. Order matter in multicolumn index
-like i have a index of 
-cola colb cloc
-then in qurey they should be called like this only in this pattern 
-because they are sorted like that you can't skip a cloumn
-3. Index also not supports inequality operation
-like in ordered way you can't use between
+1. Index can't be used on functions like<br>
+in my SQL Query <br>
+where Func() .. some function call = equals something then <br>
+here index will not work<br>
+solution to this is we can use Between if we can so we can make it a Range Scan<br>
+2. Order matter in multicolumn index<br>
+like i have a index of <br>
+cola colb cloc<br>
+then in qurey they should be called like this only in this pattern <br>
+because they are sorted like that you can't skip a cloumn<br>
+3. Index also not supports inequality operation<br>
+like in ordered way you can't use between<br>
 
-In short index is responsibility of developers (all caps)
+In short index is responsibility of developers (all caps)<br>
 
 
 
